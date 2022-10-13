@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.win5.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_popularLeague"
+            app:destination="@id/popularLeague" />
+        <action
+            android:id="@+id/action_mainFragment_to_popularTeamsFragment2"
+            app:destination="@id/popularTeamsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_richPlayers"
+            app:destination="@id/richPlayers" />
+    </fragment>
+    <fragment
+        android:id="@+id/popularTeamsFragment"
+        android:name="com.example.win5.PopularTeamsFragment"
+        android:label="fragment_popular_teams"
+        tools:layout="@layout/fragment_popular_teams" >
+        <action
+            android:id="@+id/action_popularTeamsFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/popularLeague"
+        android:name="com.example.win5.PopularLeagueFragment"
+        android:label="fragment_popular_league"
+        tools:layout="@layout/fragment_popular_league" >
+        <action
+            android:id="@+id/action_popularLeague_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/richPlayers"
+        android:name="com.example.win5.RichPlayersFragment"
+        android:label="fragment_rich_players"
+        tools:layout="@layout/fragment_rich_players" >
+        <action
+            android:id="@+id/action_richPlayers_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>

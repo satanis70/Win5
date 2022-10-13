@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#615858"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/title_item_players"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/bevan"
+        android:gravity="center"
+        android:text="Real Madrid"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/players_image_item"></TextView>
+
+    <TextView
+        android:id="@+id/condition_item_players"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="$145 Million"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/title_item_players"
+        tools:layout_editor_absoluteX="12dp"></TextView>
+
+    <ImageView
+        android:id="@+id/players_image_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <TextView
+        android:id="@+id/players_descriptions_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="There is no doubt Real Madrid is the most popular football club in the world. Real Madrid enjoys the biggest fan base in Football. While the club’s history is remarkable and also Real Madrid is one of the most successful teams IN Football. Real Madrid won 10 European titles and Numerous major trophies in history. And the team has won Most Lal Lifga Titles. Also, Real Madrid won the FIFA Club of the 20th Century award with 42.35 % votes. Real Madrid is also popular on Social Media and the team has the most followers on Social Media. Social Media Followers: Instagram: 99.5 Millions Facebook: 111 Million Twitter: 37.5 Million Youtube: 6.52 Million Subscribers Sponsorship Deal: Adidas €140 Million/ Year (10-year contract), Fly Emirates Shirt Sponsor"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/condition_item_players"
+        app:layout_constraintVertical_bias="0.072"></TextView>
+
+    <ImageView
+        android:id="@+id/imageView_line"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginBottom="28dp"
+        android:src="@drawable/imageline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"></ImageView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
