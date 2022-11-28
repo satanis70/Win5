@@ -10,6 +10,7 @@ import com.example.win5.adapters.AdapterLeague
 import com.example.win5.adapters.AdapterTeams
 import kotlinx.android.synthetic.main.fragment_popular_league.*
 import kotlinx.android.synthetic.main.fragment_popular_teams.*
+import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -31,7 +32,7 @@ class PopularLeagueFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val apiInterface = RetrofitInit.init()
-        GlobalScope.launch(Dispatchers.IO) {
+        CoroutineScope(Dispatchers.IO).launch {
             val apiResponce = apiInterface.getPopularLeague().awaitResponse()
             if (apiResponce.isSuccessful){
                 val recyclerAdapter = AdapterLeague(apiResponce.body()!!.league)
